@@ -498,6 +498,11 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
+.btn:hover,
+.btn:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff510d), to(#ff8601));
+  background-image: linear-gradient(to bottom, #ff510d 0%, #ff8601 100%);
+}
 .phone {
   display: none;
 }
@@ -866,6 +871,10 @@ h2 {
   background-color: #000000;
   opacity: 1;
 }
+.slider > .swiper-pagination-bullets .swiper-pagination-bullet:hover,
+.slider > .swiper-pagination-bullets .swiper-pagination-bullet:active {
+  background-color: #93c312;
+}
 .slider > .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: #93c312;
 }
@@ -986,6 +995,14 @@ h2 {
   font-size: 27px;
   line-height: 1;
 }
+.footer__link--email {
+  color: #93c312;
+  text-decoration: underline;
+}
+.footer__link--email:hover,
+.footer__link--email:active {
+  text-decoration: none;
+}
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1002,4 +1019,43 @@ h2 {
 .social__item {
   margin-left: 5px;
   margin-right: 5px;
+}
+.modal {
+  width: 275px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+.modal h3 {
+  font-size: 20px;
+  text-align: center;
+}
+.modal__input {
+  height: 38px;
+}
+.modal__text {
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  height: 100px;
+  min-height: 100px;
+  outline: none;
+}
+.modal__input,
+.modal__text {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 6px 10px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #818282;
+}
+.modal__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 5px 25px;
+  font-size: 20px;
+}
+.modal__comment {
+  font-size: 12px;
 }

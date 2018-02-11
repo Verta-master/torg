@@ -5,6 +5,7 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Контейнеры от компании «Торг-Комс» | Купить контейнеры в Москве</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
         </form>
         <div class="phone">
           <a href="Tel:+74997059793" class="phone__link">+ 7 [499] 705-97-93</a>
-          <a href="#" class="phone__call">заказать звонок</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="phone__call">заказать звонок</a>
         </div>
       </div>
       <nav class="menu menu--closed">
@@ -361,9 +362,9 @@
           <p class="footer__title">Остались вопросы?</p>
           <p>Позвоните и задайте их нашему менеджеру:</p>
           <a href="Tel:+74997059793" class="footer__link">+ 7 499 705-97-93</a>
-          <a href="mailto:Info@torg-koms.ru" class="footer__link">Info@torg-koms.ru</a>
+          <a href="mailto:Info@torg-koms.ru" class="footer__link footer__link--email">Info@torg-koms.ru</a>
           <p>Или заполните и отправьте форму заявки.<br>Мы свяжемся с вами в течение рабочего дня.</p>
-          <button type="button" class="btn btn--call">форма заявки</button>
+          <a data-fancybox data-src="#feedback" href="javascript:;" class="btn btn--call">форма заявки</a>
         </div>
         <div class="social-widget">
           <img src="img/social.jpg" alt=">Остались вопросы?" width="402" height="269">
@@ -395,10 +396,35 @@
     </div>
   </footer>
   
+  <div class="modal modal--call" style="display: none;" id="call">
+    <form method="POST" action="#">
+      <h3>Обратный звонок</h3>
+      <input type="text" name="name" placeholder="Имя" class="modal__input">
+      <input type="tel" name="phone" placeholder="Телефон *" class="modal__input" required>
+      <button type="submit" class="btn modal__btn">Отправить</button>
+      <p class="modal__comment">* — Поля, обязательные для заполнения</p>
+    </form>
+  </div>
+  
+  <div class="modal modal--feedback" style="display: none;" id="feedback">
+    <form method="POST" action="#">
+      <h3>Обратная связь</h3>
+      <input type="text" name="name" placeholder="Имя" class="modal__input">
+      <input type="email" name="email" placeholder="E-mail *" class="modal__input" required>
+      <input type="tel" name="phone" placeholder="Телефон" class="modal__input">
+      <textarea name="text" placeholder="Сообщение" class="modal__text"></textarea>
+      <button type="submit" class="btn modal__btn">Отправить</button>
+      <p class="modal__comment">* — Поля, обязательные для заполнения</p>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/jquery.arcticmodal-0.3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+  
+<!-- Slider -->
   <script>
   var mySwiper = new Swiper ('.slider', {
     loop: true,
