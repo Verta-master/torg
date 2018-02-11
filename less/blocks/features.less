@@ -1,0 +1,33 @@
+.features {
+  padding-top: 30px;
+}
+
+.features__item {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #e9f0bd;
+  overflow: hidden;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 115px;
+    width: 200px;
+    height: 100%;
+    background-color: @green;
+    z-index: 0;
+    transform: skewX(-10deg);
+  }
+}
+
+.features__text {
+  position: relative;
+  z-index: 1;
+  width: 60%;
+  color: #fff;
+  padding-right: 10px;
+}
