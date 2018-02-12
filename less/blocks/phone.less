@@ -1,3 +1,30 @@
 .phone {
   display: none;
 }
+
+//------------------
+@media (min-width: 990px) {
+  .phone {
+    display: block;
+    padding: 7px 10px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: right;
+    border: 1px solid rgb(85, 85, 85);
+  }
+  
+  .phone__link {
+    display: block;
+    color: #fff;
+  }
+  
+  .phone__call {
+    color: @green;
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}

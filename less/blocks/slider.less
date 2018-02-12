@@ -7,93 +7,10 @@
 }
 
 .slider__slide {
-  position: relative;
-  box-sizing: border-box;
-  
   img {
     width: 100%;
     height: auto;
   }
-}
-
-.slider__text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  height: 100%;
-  padding: 10px;
-  padding-top: 20px;
-  color: #fff;
-  
-  &--wide {
-    width: 100%;
-  }
-  
-  h2 {
-    text-align: center;
-    margin: 0;
-    font-size: 17px;
-    line-height: 1;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-  }
-  
-  p {
-    font-size: 10px;
-    line-height: 1.2;
-    text-align: center;
-  }
-}
-
-.slider__subtitle {
-  text-align: center;
-  font-size: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.slider__list {
-  width: 230px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-
-.slider__item {
-  width: 110px;
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  
-  img {
-    width: 11px;
-    height: auto;
-    margin-top: 2px;
-  }
-  
-  p {
-    flex-grow: 1;
-    margin: 0;
-    margin-left: 5px;
-    font-size: 7px;
-    line-height: 1.2;
-    text-align: left;
-  }
-}
-
-.slider__link {
-  max-width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 10px;
-  line-height: 1;
 }
 
 .slider > .swiper-pagination-bullets {
@@ -131,45 +48,6 @@
     min-height: 339px;
   }
   
-  .slider__text {
-    width: 60%;
-    
-    &--wide {
-      width: 100%;
-    }
-    
-    h2 {
-      font-size: 35px;
-      margin-bottom: 20px;
-    }
-    
-    p {
-      font-size: 20px;
-    }
-  }
-  
-  .slider__list {
-    width: 470px;
-    margin-top: 20px;
-  }
-  
-  .slider__item {
-    width: 215px;
-    
-    img {
-      width: 22px;
-    }
-    
-    p {
-      font-size: 14px;
-    }
-  }
-  
-  .slider__link {
-    font-size: 21px;
-    max-width: 250px;
-  }
-  
   .slider > .swiper-pagination-bullets .swiper-pagination-bullet {
     width: 22px;
     height: 5px;
@@ -179,5 +57,26 @@
   
   .slider > .swiper-pagination-bullets {
     bottom: 4px;
+  }
+}
+
+//------------------
+@media (min-width: 990px) {
+  .slider {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .slider__slide {
+    min-height: 388px;
+  }
+  
+  .slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 26px;
+    height: 6px;
   }
 }

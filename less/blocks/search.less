@@ -8,6 +8,7 @@
 
 .search__input {
   flex-grow: 1;
+  min-width: 70%;
   height: 46px;
   padding-left: 20px;
   padding-right: 20px;
@@ -34,5 +35,12 @@
   &:active {
     background-image: url(../img/magnifying-glass-green.png);
     transition: ease-out 0.3s;
+  }
+}
+
+//------------------
+@media (min-width: 990px) {
+  .search {
+    width: 310px;
   }
 }

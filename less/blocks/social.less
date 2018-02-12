@@ -10,3 +10,21 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+
+//------------------
+@media (min-width: 990px) {
+  .social {
+    justify-content: flex-start;
+  }
+  
+  .social__item {
+    &:first-child {
+      margin-left: 0;
+    }
+    
+    img {
+      width: 32px;
+      height: auto;
+    }
+  }
+}

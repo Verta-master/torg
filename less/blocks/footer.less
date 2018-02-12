@@ -98,3 +98,44 @@
     padding: 7px;
   }
 }
+
+//------------------
+@media (min-width: 990px) {
+  .footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer__top {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    
+    .footer__title {
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+  
+  .footer__block {
+    margin-bottom: 0;
+    
+    p, a {
+      text-align: left;
+    }
+  }
+  
+  .footer__bottom {
+    padding-top: 15px;
+    
+    p {
+      text-align: left;
+      margin-top: 0;
+      line-height: 1.2;
+    }
+    
+    address {
+      text-align: right;
+    }
+  }
+}
