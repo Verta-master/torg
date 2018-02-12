@@ -1,5 +1,9 @@
 .benefits {
   padding-top: 10px;
+  
+  .subtitle {
+    display: none;
+  }
 }
 
 .benefits__item {
@@ -24,11 +28,7 @@
     color: #1b2131;
   }
   
-  &:nth-child(2),
-  &:nth-child(3),
-  &:nth-child(6),
-  &:nth-child(7),
-  &:nth-child(8) {
+  &:nth-child(n+4) {
     display: none;
   }
 }
@@ -48,9 +48,9 @@
     width: 45%;
     margin-bottom: 50px;
     
-    &:nth-child(2),
-    &:nth-child(6),
-    &:nth-child(8) {
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
       display: block;
     }
   }
@@ -66,8 +66,7 @@
     width: 33%;
     margin-bottom: 40px;
     
-    &:nth-child(3),
-    &:nth-child(7) {
+    &:nth-child(n+7) {
       display: block;
     }
   }

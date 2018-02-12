@@ -1,0 +1,39 @@
+.breadcrumbs {
+  display: none;
+}
+
+//------------------
+@media (min-width: 990px) {
+  .breadcrumbs {
+    display: block;
+    padding-top: 15px;
+  }
+  
+  .breadcrumbs__link {
+    position: relative;
+    padding-right: 20px;
+    color: #2d2d2d;
+    font-size: 14px;
+    text-decoration: underline;
+    
+    &::after {
+      content: "->";
+      position: absolute;
+      top: -5px;
+      right: 0;
+    }
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+    
+    &:last-child {
+      text-decoration: none;
+      
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
