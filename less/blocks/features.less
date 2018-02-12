@@ -1,5 +1,13 @@
 .features {
-  padding-top: 30px;
+  padding-top: 25px;
+  
+  h2 {
+    padding-right: 100px;
+  }
+}
+
+.features__list {
+  padding-top: 15px;
 }
 
 .features__item {
@@ -15,19 +23,31 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 115px;
+    left: 125px;
     width: 200px;
     height: 100%;
     background-color: @green;
     z-index: 0;
-    transform: skewX(-10deg);
+    transform: skewX(-12deg);
   }
 }
 
 .features__text {
   position: relative;
   z-index: 1;
-  width: 60%;
-  color: #fff;
-  padding-right: 10px;
+  width: 50%;
+  padding-right: 5px;
+  
+  h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+  }
 }
