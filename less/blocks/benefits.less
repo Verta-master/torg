@@ -32,3 +32,24 @@
     display: none;
   }
 }
+
+//------------------
+@media (min-width: 640px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  .benefits__item {
+    width: 50%;
+    
+    &:nth-child(2),
+    &:nth-child(6),
+    &:nth-child(8) {
+      display: block;
+    }
+  }
+}

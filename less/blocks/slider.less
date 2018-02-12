@@ -118,3 +118,65 @@
 .slider > .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: @green;
 }
+
+//------------------
+@media (min-width: 640px) {
+  .slider {
+    left: 15px;
+    width: 610px;
+  }
+  
+  .slider__slide {
+    min-height: 339px;
+  }
+  
+  .slider__text {
+    width: 60%;
+    
+    &--wide {
+      width: 100%;
+    }
+    
+    h2 {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 21px;
+    }
+  }
+  
+  .slider__list {
+    width: 470px;
+    margin-top: 20px;
+  }
+  
+  .slider__item {
+    width: 215px;
+    
+    img {
+      width: 22px;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  .slider__link {
+    font-size: 21px;
+    max-width: 250px;
+  }
+  
+  .slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 20px;
+    height: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .slider > .swiper-pagination-bullets {
+    bottom: 10px;
+  }
+}
