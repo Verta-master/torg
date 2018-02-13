@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Контейнеры от компании «Торг-Комс» | Купить контейнеры в Москве</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -12,10 +11,10 @@
   <header class="header">
     <div class="header__wrap wrapper">
       <div class="header__top">
-        <div class="logo">
+        <a href="index.html" class="logo">
           <img src="img/logo.svg" alt="Logo" width="106" height="60">
           <p><strong>ООО «ТОРГ-КОМС-Групп»</strong>изготовление и продажа контейнеров<br>время работы: с 9:00 до 18:00 (сб. и вс. выходные)</p>
-        </div>
+        </a>
         <form action="#" method="get" class="search">
           <input type="text" name="search" class="search__input" placeholder="Поиск">
           <button type="submit" class="search__btn"><span class="visually-hidden">Найти</span></button>
@@ -30,10 +29,10 @@
       <button type="button" class="menu__btn"><span class="visually-hidden">Меню</span></button>
       <ul class="menu__list">
         <li class="menu__item">
-          <a class="menu__link menu__link--active">Главная</a>
+          <a class="menu__link">Главная</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Продукция</a>
+          <a href="#" class="menu__link menu__link--active">Продукция</a>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Оплата и доставка</a>
@@ -345,21 +344,6 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/picturefill.min.js"></script>
-  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-  
-<!-- Slider -->
-  <script>
-  var mySwiper = new Swiper ('.slider', {
-    loop: true,
-//    autoplay: true,
-    pagination: {
-      el: '.slider__pagination',
-      clickable: true,
-    },
-  })
-  </script>
 </body>
 </html>
