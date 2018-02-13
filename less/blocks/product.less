@@ -100,3 +100,33 @@
     margin-bottom: 35px;
   }
 }
+
+//------------------
+@media (min-width: 990px) {
+  .product__text {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .product__item {
+    margin-right: 35px;
+    margin-bottom: 50px;
+    
+    &:nth-child(n+3) {
+      display: block;
+    }
+    
+    &:nth-child(2) {
+      margin-right: 35px;
+    }
+    
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  
+  .product__list {
+    margin-bottom: 50px;
+  }
+}
