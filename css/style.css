@@ -16,6 +16,12 @@
   font-style: normal;
   src: url("../fonts/molot.woff2") format("woff2"), url("../fonts/molot.woff") format("woff");
 }
+@font-face {
+  font-weight: 400;
+  font-family: "Impact";
+  font-style: normal;
+  src: url("../fonts/impact.woff2") format("woff2"), url("../fonts/impact.woff") format("woff");
+}
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -463,6 +469,10 @@ h2 {
   font-weight: 400;
   text-transform: uppercase;
 }
+.internal h1,
+.internal h2 {
+  font-family: "Impact", "Arial", sans-serif;
+}
 .header {
   width: 100%;
   background-color: #000;
@@ -511,6 +521,7 @@ h2 {
   display: none;
 }
 .logo {
+  display: block;
   margin-bottom: 20px;
 }
 .logo p {
@@ -1156,6 +1167,59 @@ h2 {
   background-color: rgba(136, 170, 0, 0.1);
   z-index: 0;
 }
+.catalog__item {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border: 1px solid #ededed;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.catalog__item:hover,
+.catalog__item:active {
+  border: 1px solid #88aa00;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.catalog__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 175px;
+}
+.catalog__block h3 {
+  margin: 0;
+  text-align: center;
+  background-color: #ededed;
+}
+.catalog__block h3 a {
+  color: #1b2131;
+  font-size: 19px;
+  font-weight: 700;
+}
+.catalog__block span {
+  display: block;
+  font-size: 15px;
+  color: #1b2131;
+  text-align: center;
+  background-color: #ededed;
+}
+.catalog__block p {
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+.catalog__btn {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (min-width: 640px) {
   h2 {
     font-size: 30px;
@@ -1395,6 +1459,21 @@ h2 {
   .details__img h4 {
     margin-bottom: 10px;
   }
+  .catalog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .catalog__item {
+    width: 47%;
+  }
 }
 @media (min-width: 990px) {
   .main {
@@ -1409,7 +1488,9 @@ h2 {
             align-items: flex-start;
   }
   .internal h1 {
-    margin-top: 8px;
+    font-size: 50px;
+    line-height: 52px;
+    margin-top: 0;
     text-transform: none;
     padding-bottom: 30px;
     margin-bottom: 10px !important;
@@ -1857,5 +1938,43 @@ h2 {
   .details__img {
     margin-top: -15px;
     margin-bottom: 70px;
+  }
+  .catalog {
+    margin-bottom: 30px;
+  }
+  .catalog h1 {
+    margin-top: 50px;
+    padding-bottom: 10px;
+  }
+  .catalog__list {
+    margin-top: 50px;
+  }
+  .catalog__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 465px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom, #ededed, #ededed 50px, #fff 50px, #fff);
+  }
+  .catalog__img {
+    width: 205px;
+    margin-right: 15px;
+  }
+  .catalog__block {
+    width: 245px;
+  }
+  .catalog__block h3,
+  .catalog__block span {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .catalog__block p {
+    text-align: left;
+    padding: 0;
+    padding-right: 10px;
+  }
+  .catalog__btn {
+    margin-left: 0;
   }
 }
