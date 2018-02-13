@@ -13,12 +13,20 @@
 }
 
 .sidebar__link {
-  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 52px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
   color: #1b2131;
   transition: ease-out 0.2s;
+  
+  p {
+    margin: 0;
+    max-width: 125px;
+  }
 }
 
 .sidebar__img {
@@ -34,11 +42,7 @@
 }
 
 .sidebar__item {
-  min-height: 52px;
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   border-top: 1px solid #fff;
   
   &--active,
@@ -80,7 +84,10 @@
   }
   
   .sidebar__link {
-    width: 120px;
+    p {
+      width: 120px;
+      max-width: none;
+    }
   }
   
   .sidebar__menu {
